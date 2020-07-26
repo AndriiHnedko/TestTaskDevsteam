@@ -1,6 +1,4 @@
 import React from 'react'
-import {ScrollView, View} from 'react-native'
-import FetchImage from './FetchImage'
 import ImageFull from "./ImageFull";
 
 
