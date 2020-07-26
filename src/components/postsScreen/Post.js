@@ -15,7 +15,7 @@ export default ({ post, navigation }) => {
         >
             <Image
                 source={ {uri: post.iconImage} }
-                style={ styles.iconPicture}
+                style={ styles.iconPicture }
             />
         </TouchableNativeFeedback>
         <View style={ styles.textInfo }>
