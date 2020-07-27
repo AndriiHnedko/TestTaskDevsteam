@@ -1,3 +1,5 @@
+import { Dimensions } from 'react-native'
+
 export const sortRequestData = data => {
     let result = []
     data.forEach(item => {
@@ -14,11 +16,8 @@ export const sortRequestData = data => {
 }
 
 export const imageSize = (height, width) => {
-    let proportions = Math.floor(height/width * 10) / 10
-    if (proportions < 1) {
-        let h = (1-proportions)*100
-        return {width: `100%`, height: `${h}%`}
-    } else {
-        return {width: '100%', height: '100%'}
-    }
+    const windowWidth = Dimensions.get('window').width
+    const correlationSize = width/windowWidth
+    const adaptiveHeight = Math.floor(height/correlationSize)
+    return {width: `100%`, height: adaptiveHeight}
 }

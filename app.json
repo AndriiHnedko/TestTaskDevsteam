@@ -16,8 +16,9 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
+    "android": {
+      "package": "com.andrii.test_task",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
