@@ -1,5 +1,5 @@
 import React from 'react'
-import ImageFull from "./ImageFull";
+import ImageFull from './ImageFull'
 
 
 const Images = ({ route }) => {
